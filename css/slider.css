@@ -1,13 +1,13 @@
 .wrapper {
     width: 600px;
     margin: 30px auto;
-
+    position: relative;
 }
 
 #slider {
     width: 600px;
     height: 400px;
-    margin: 30px auto;
+    margin: 10px auto;
     overflow: hidden;
 }
 
@@ -16,18 +16,22 @@
     display: none;
 }
 
-a {
-    padding: 5px 10px;
-    background-color: #F0F0F0;
-    color: black;
-    margin-top: 30px;
-    text-decoration: none;
+.arrows {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
 }
 
-a.left {
-    float: left;
+.prev {
+    left: 5px;
+    top: 200px;
+    transform: rotate(225deg);
 }
 
-a.right {
-    float: right;
+.next {
+    right: 5px;
+    top: 200px;
+    transform: rotate(45deg);
 }
